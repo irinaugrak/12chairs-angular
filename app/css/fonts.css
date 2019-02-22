@@ -25,6 +25,3 @@
   font-style: normal;
   src: local("PT Root UI"), url("../fonts/PT Root UI_Medium.eot");
   src: local("PT Root UI"), url("../fonts/PT Root UI_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Medium.woff") format("woff"), url("../fonts/PT Root UI_Medium.woff2") format("woff2"), url("../fonts/PT Root UI_Medium.ttf") format("truetype"), url("../fonts/PT Root UI_Medium.svg") format("svg"); }
-
-body {
-  background-color: #f07; }
