@@ -1,6 +1,72 @@
 @import "fonts";
 
-$color: #f07;
+// color
+$background-light: #ffffff;
+
+// font-size
+$size-logo: 13px;
+$size-default: 16px;
+
+// line-height
+$line-default: 20px;
+
+// letter-spacing
+$letter-default: 0;
+
 body {
-  background-color: $color;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Root UI", Arial, sans-serif;
+  font-size: $size-default;
+  line-height: $line-default;
+  letter-spacing: $letter-default;
 }
+.container {
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 12px;
+  background-color: $background-light;
+}
+.header-top {
+  display: flex;
+}
+.header-logo {
+  width: 170px;
+  display: flex;
+}
+.header-logo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header-logo__title {
+  position: relative;
+  font-size: $size-logo;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1f1d3d;
+}
+.header-logo__title:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 86px;
+  height: 2px;
+  background-color: #1f1d3d;
+}
+.header-logo__title:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 86px;
+  height: 2px;
+  background-color: #1f1d3d;
+}
+

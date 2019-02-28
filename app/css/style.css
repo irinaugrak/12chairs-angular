@@ -3,28 +3,92 @@
   font-weight: normal;
   font-style: normal;
   src: local("PT Root UI"), url("../fonts/PT Root UI_Regular.eot");
-  src: local("PT Root UI"), url("../fonts/PT Root UI_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Regular.woff") format("woff"), url("../fonts/PT Root UI_Regular.woff2") format("woff2"), url("../fonts/PT Root UI_Regular.ttf") format("truetype"), url("../fonts/PT Root UI_Regular.svg") format("svg"); }
-
+  src: local("PT Root UI"), url("../fonts/PT Root UI_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Regular.woff") format("woff"), url("../fonts/PT Root UI_Regular.woff2") format("woff2"), url("../fonts/PT Root UI_Regular.ttf") format("truetype"), url("../fonts/PT Root UI_Regular.svg") format("svg");
+}
 @font-face {
   font-family: "PT Root UI";
   font-weight: 700;
   font-style: normal;
   src: local("PT Root UI"), url("../fonts/PT Root UI_Bold.eot");
-  src: local("PT Root UI"), url("../fonts/PT Root UI_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Bold.woff") format("woff"), url("../fonts/PT Root UI_Bold.woff2") format("woff2"), url("../fonts/PT Root UI_Bold.ttf") format("truetype"), url("../fonts/PT Root UI_Bold.svg") format("svg"); }
-
+  src: local("PT Root UI"), url("../fonts/PT Root UI_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Bold.woff") format("woff"), url("../fonts/PT Root UI_Bold.woff2") format("woff2"), url("../fonts/PT Root UI_Bold.ttf") format("truetype"), url("../fonts/PT Root UI_Bold.svg") format("svg");
+}
 @font-face {
   font-family: "PT Root UI";
   font-weight: 300;
   font-style: normal;
   src: local("PT Root UI"), url("../fonts/PT Root UI_Light.eot");
-  src: local("PT Root UI"), url("../fonts/PT Root UI_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Light.woff") format("woff"), url("../fonts/PT Root UI_Light.woff2") format("woff2"), url("../fonts/PT Root UI_Light.ttf") format("truetype"), url("../fonts/PT Root UI_Light.svg") format("svg"); }
-
+  src: local("PT Root UI"), url("../fonts/PT Root UI_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Light.woff") format("woff"), url("../fonts/PT Root UI_Light.woff2") format("woff2"), url("../fonts/PT Root UI_Light.ttf") format("truetype"), url("../fonts/PT Root UI_Light.svg") format("svg");
+}
 @font-face {
   font-family: "PT Root UI";
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   src: local("PT Root UI"), url("../fonts/PT Root UI_Medium.eot");
-  src: local("PT Root UI"), url("../fonts/PT Root UI_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Medium.woff") format("woff"), url("../fonts/PT Root UI_Medium.woff2") format("woff2"), url("../fonts/PT Root UI_Medium.ttf") format("truetype"), url("../fonts/PT Root UI_Medium.svg") format("svg"); }
-
+  src: local("PT Root UI"), url("../fonts/PT Root UI_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PT Root UI_Medium.woff") format("woff"), url("../fonts/PT Root UI_Medium.woff2") format("woff2"), url("../fonts/PT Root UI_Medium.ttf") format("truetype"), url("../fonts/PT Root UI_Medium.svg") format("svg");
+}
 body {
-  background-color: #f07; }
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Root UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.container {
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 12px;
+  background-color: #ffffff;
+}
+
+.header-top {
+  display: flex;
+}
+
+.header-logo {
+  width: 170px;
+  display: flex;
+}
+
+.header-logo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo__title {
+  position: relative;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1f1d3d;
+}
+
+.header-logo__title:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 86px;
+  height: 2px;
+  background-color: #1f1d3d;
+}
+
+.header-logo__title:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 86px;
+  height: 2px;
+  background-color: #1f1d3d;
+}
+
+/*# sourceMappingURL=style.css.map */
