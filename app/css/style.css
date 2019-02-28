@@ -32,8 +32,9 @@ body {
   padding: 0;
   font-family: "PT Root UI", Arial, sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.2;
   letter-spacing: 0;
+  color: #142558;
 }
 
 .container {
@@ -44,7 +45,7 @@ body {
 }
 
 .header {
-  padding-top: 12px;
+  padding-top: 16px;
   background-color: #ffffff;
 }
 
@@ -55,11 +56,14 @@ body {
 .header-logo {
   width: 170px;
   display: flex;
+  align-items: flex-start;
 }
 
 .header-logo__wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .header-logo__title {
@@ -74,7 +78,7 @@ body {
 .header-logo__title:before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: -4px;
   left: 0;
   width: 86px;
   height: 2px;
@@ -84,11 +88,18 @@ body {
 .header-logo__title:after {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 16px;
   left: 0;
   width: 86px;
   height: 2px;
   background-color: #1f1d3d;
+}
+
+.header-logo__slogan {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #a1a8bd;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,19 @@
 @import "fonts";
 
 // color
+$color-main: #142558;
+$color-secondary: #a1a8bd;
+$color-dark: #1f1d3d;
 $background-light: #ffffff;
 
 // font-size
 $size-logo: 13px;
+$size-slogan: 12px;
 $size-default: 16px;
 
 // line-height
-$line-default: 20px;
+$line-main: 1.2;
+$line-secondary: 1.5;
 
 // letter-spacing
 $letter-default: 0;
@@ -19,8 +24,9 @@ body {
   padding: 0;
   font-family: "PT Root UI", Arial, sans-serif;
   font-size: $size-default;
-  line-height: $line-default;
+  line-height: $line-main;
   letter-spacing: $letter-default;
+  color: $color-main;
 }
 .container {
   width: 1200px;
@@ -29,7 +35,7 @@ body {
   margin: 0 auto;
 }
 .header {
-  padding-top: 12px;
+  padding-top: 16px;
   background-color: $background-light;
 }
 .header-top {
@@ -38,10 +44,13 @@ body {
 .header-logo {
   width: 170px;
   display: flex;
+  align-items: flex-start;
 }
 .header-logo__wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .header-logo__title {
   position: relative;
@@ -49,24 +58,32 @@ body {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #1f1d3d;
+  color: $color-dark;
 }
 .header-logo__title:before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: -4px;
   left: 0;
   width: 86px;
   height: 2px;
-  background-color: #1f1d3d;
+  background-color: $color-dark;;
 }
 .header-logo__title:after {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 16px;
   left: 0;
   width: 86px;
   height: 2px;
-  background-color: #1f1d3d;
+  background-color: $color-dark;;
 }
+.header-logo__slogan {
+  margin-top: 6px;
+  font-size: $size-slogan;
+  color: $color-secondary;
+  line-height: $line-secondary;
+}
+
+
 
