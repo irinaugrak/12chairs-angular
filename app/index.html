@@ -9,40 +9,46 @@
 </head>
 <body>
 <header class="header">
-  <div class="container">
-    <div class="header-top">
-      <div class="header-logo">
-        <img src="img/logo.png" alt="logo">
-        <div class="header-logo__wrapper">
-          <span class="header-logo__title">12 стульев</span>
-          <span class="header-logo__slogan">Утром деньги, <br> вечером стулья</span>
+  <div class="header-top-wrapper">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-logo">
+          <img src="img/logo.png" alt="logo">
+          <div class="header-logo__wrapper">
+            <span class="header-logo__title">12 стульев</span>
+            <span class="header-logo__slogan">Утром деньги, <br> вечером стулья</span>
+          </div>
         </div>
-      </div>
-      <a class="header-phone" href="+74996539900">+7 (499) 653-9-900</a>
-      <div class="header-content">
-        <a class="header-status" href="#">Проверить статус заказа</a>
-        <div class="header-basket">
-          <a class="header-basket__title" href="#">Корзина</a>
-          <span class="header-basket__count">0</span>
-        </div>
+        <a class="header-phone" href="+74996539900">+7 (499) 653-9-900</a>
+        <div class="header-content">
+          <a class="header-status" href="#">Проверить статус заказа</a>
+          <div class="header-basket">
+            <a class="header-basket__title" href="#">Корзина</a>
+            <span class="header-basket__count">0</span>
+          </div>
           <a class="header-in" href="#">Вход</a>
+        </div>
       </div>
     </div>
-    <div class="header-bottom">
-      <nav class="header-navigation">
-        <ul class="header-navigation__list">
-          <li class="header-navigation__item">Стулья и кресла</li>
-          <li class="header-navigation__item">Кровати и матрасы</li>
-          <li class="header-navigation__item">Шкафы и комоды</li>
-          <li class="header-navigation__item">Мебель для кухни</li>
-          <li class="header-navigation__item">Товары для дома</li>
-          <li class="header-navigation__item">Товары для дома</li>
-        </ul>
-      </nav>
-      <form class="header-search" action="#" method="get">
-        <input type="search" placeholder="Поиск по товарам" aria-label="Поиск по товарам">
-        <button type="submit"></button>
-      </form>
+  </div>
+  <div class="header-bottom-wrapper">
+    <div class="container">
+      <div class="header-bottom">
+        <nav class="header-navigation">
+          <ul class="header-navigation__list">
+            <li class="header-navigation__item header-navigation__item--current"><a href="#">Стулья и кресла</a></li>
+            <li class="header-navigation__item"><a href="#">Кровати и матрасы</a></li>
+            <li class="header-navigation__item"><a href="#">Шкафы и комоды</a></li>
+            <li class="header-navigation__item"><a href="#">Мебель для кухни</a></li>
+            <li class="header-navigation__item"><a href="#">Товары для дома</a></li>
+          </ul>
+        </nav>
+        <form class="header-search" action="#" method="get">
+          <input class="header-search__input" type="search" placeholder="Поиск по товарам"
+                 aria-label="Поиск по товарам">
+          <button class="header-search__btn" type="submit"></button>
+        </form>
+      </div>
     </div>
   </div>
 </header>
