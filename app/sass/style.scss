@@ -1,13 +1,19 @@
 @import "fonts";
 
 // color
+$grey-main: #A1A8BD;
 $grey-light: #F0F2F7;
+$grey-medium: #E3E8F0;
+
 $red-main: #F54732;
+$red-light: #F24841;
+$red-medium: #E93D35;
+$red-dark: #DB2D25;
+
 $blue-main: #142558;
-$grey-main: #a1a8bd;
+$blue-medium: #343e5c;
 $color-dark: #1f1d3d;
-$color-medium: #343e5c;
-$color-light: #E3E8F0;
+
 $background-white: #FFFFFF;
 $background-light: #F5F8FA;
 
@@ -34,7 +40,7 @@ $letter13: 0.13em;
 }
 
 body {
-  min-width: 1170px;
+  /*min-width: 1170px;*/
   margin: 0;
   padding: 0;
   font-family: "PT Root UI", Arial, sans-serif;
@@ -49,6 +55,30 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
+}
+.btn-default {
+  box-sizing: border-box;
+  min-width: 100px;
+  border: 2px solid $grey-medium;
+  background: transparent;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: $size-medium;
+  font-weight: 700;
+  line-height: $line-main;
+  color: $blue-medium;
+  cursor: pointer;
+}
+.btn-default:hover:enabled {
+  border-color: $red-light;
+  color: $red-light;
+}
+.btn-default:active:enabled {
+  border-color: $red-dark;
+  color: $red-dark;
+}
+.btn-default:disabled {
+  color: $grey-main;
 }
 .header {
   padding-top: 12px;
@@ -74,7 +104,7 @@ body {
 }
 .header-content a {
   font-size: $size-medium;
-  color: $color-medium;
+  color: $blue-medium;
   text-decoration: none;
 }
 .header-logo__wrapper {
@@ -119,7 +149,7 @@ body {
   padding-left: 23px;
   position: relative;
   font-weight: 700;
-  color: $color-medium;
+  color: $blue-medium;
   text-decoration: none;
 }
 .header-phone:before {
@@ -134,7 +164,7 @@ body {
 .header-in {
   position: relative;
   padding: 8px 25px 8px 41px;
-  border: 2px solid $color-light;
+  border: 2px solid $grey-medium;
   border-radius: 5px;
   margin-left: 66px;
 }
@@ -182,7 +212,7 @@ body {
   height: 7px;
   background: url("../img/arrow-right.png") no-repeat 55% 50%;
   padding: 5px;
-  border: 2px solid $color-light;
+  border: 2px solid $grey-medium;
   border-radius: 50%;
 }
 .header-status:hover {
@@ -245,8 +275,8 @@ body {
   position: relative;
   border: none;
   background: transparent;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   margin-right: 18px;
 }
 .header-search__btn:before {
@@ -259,4 +289,67 @@ body {
   background: url("../img/search.png") no-repeat;
   cursor: pointer;
 }
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-item {
+  display: flex;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 270px;
+  background-color: $background-white;
+}
+.catalog-item a {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-decoration: none;
+}
+.catalog-item:hover {
+  box-shadow: 0px 9px 21px 0px rgba(168, 172, 185, 0.44);
+}
+
+.catalog-item-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+}
+.catalog-item-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.catalog-item__img {
+  max-height: 100%;
+  width: auto;
+}
+.catalog-item__title {
+  margin: 0;
+  margin-bottom: 13px;
+  flex-grow: 1;
+  font-size: 16px;
+  color: $blue-main;
+  max-width: 200px;
+  text-align: center;
+}
+.catalog-item__price {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  color: $blue-main;
+}
+.catalog-item__btn {
+  margin-bottom: 39px;
+}
+
+
+
 
