@@ -54,117 +54,200 @@
   </div>
 </header>
 <main>
-  <section class="page-name">
+  <section class="section-name">
     <div class="container">
-      <h1>Стулья и кресла</h1>
+      <div class="section-name__wrapper">
+        <h1 class="section-name__title section-title">Стулья и кресла</h1>
+      </div>
     </div>
   </section>
   <section class="bar">
     <div class="container">
+      <div class="bar__wrapper">
+        <div class="bar__price">
+          <span class="bar__title">Цена</span>
+          <div class="bar__price-content">
+            <div class="bar__range">
+              <input class="bar__range-item bar__range-min" type="text" value="5300">
+              <input class="bar__range-item bar__range-max" type="text" value="12900">
+            </div>
+            <div class="bar__scale">
+              <div class="bar__scale-line"></div>
+              <div class="bar__scale-item bar__scale-min"></div>
+              <div class="bar__scale-item bar__scale-max"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bar__right">
+          <div class="bar__sort">
+            <span class="bar__title">Сортировка</span>
+            <select class="bar__select" name="sort" id="sort">
+              <option value="name">По наименованию</option>
+              <option value="expensive">Дорогие сверху</option>
+              <option value="cheap">Дешевые сверху</option>
+            </select>
+          </div>
+          <div class="bar__goods">
+            <span class="bar__title">Товаров на стринце</span>
+            <select class="bar__select" name="goods" id="goods">
+              <option value=14>14</option>
+              <option value=30>30</option>
+              <option value=46>46</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="catalog">
     <div class="container">
-      <ul class="catalog-list">
-        <li class="catalog-item">
+      <div class="catalog__list">
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/chair-hanna.png" alt="Стул Ханна">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/chair-hanna.png" alt="Стул Ханна">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Стул Ханна Стул Ханна Стул Ханна Стул Ханна Стул Ханна</h2>
-              <p class="catalog-item__price">9399 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button" disabled>В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Стул Ханна</h3>
+              <p class="catalog__item-price">9399 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button" disabled>В корзину</button>
             </div>
           </a>
-        </li>
-        <li class="catalog-item">
+        </div>
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/edinburg.png" alt="Стул Эдинбург">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/edinburg.png" alt="Стул Эдинбург">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Стул Эдинбург</h2>
-              <p class="catalog-item__price">5690 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button">В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Стул Эдинбург</h3>
+              <p class="catalog__item-price">5690 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
             </div>
           </a>
-        </li>
-        <li class="catalog-item">
+        </div>
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/solier.png" alt="Стул Сольер">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/solier.png" alt="Стул Сольер">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Стул Сольер</h2>
-              <p class="catalog-item__price">2390 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button">В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Стул Сольер</h3>
+              <p class="catalog__item-price">2390 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
             </div>
           </a>
-        </li>
-        <li class="catalog-item">
+        </div>
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/stella.png" alt="Стул Стелла">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/stella.png" alt="Стул Стелла">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Стул Стелла</h2>
-              <p class="catalog-item__price">3500 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button">В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Стул Стелла</h3>
+              <p class="catalog__item-price">3500 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
             </div>
           </a>
-        </li>
-        <li class="catalog-item">
+        </div>
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/blanes.png" alt="Стул Бланес">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/blanes.png" alt="Стул Бланес">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Стул Бланес</h2>
-              <p class="catalog-item__price">4300 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button">В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Стул Бланес</h3>
+              <p class="catalog__item-price">4300 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
             </div>
           </a>
-        </li>
-        <li class="catalog-item">
+        </div>
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/goa.png" alt="Кресло Гоа">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/goa.png" alt="Кресло Гоа">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Кресло Гоа</h2>
-              <p class="catalog-item__price">8499 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button">В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Кресло Гоа</h3>
+              <p class="catalog__item-price">8499 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
             </div>
           </a>
-        </li>
-        <li class="catalog-item">
+        </div>
+        <div class="catalog__item catalog__banner">
+          <div class="catalog__banner-wrapper">
+            <h2 class="catalog__banner-title">Товары для дома <br> со скидкой</h2>
+            <button class="btn-default catalog__banner-btn" type="button">Смотреть все</button>
+          </div>
+        </div>
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/milton.png" alt="Кресло Мильтон">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/milton.png" alt="Кресло Мильтон">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Кресло Мильтон</h2>
-              <p class="catalog-item__price">12599 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button">В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Кресло Мильтон</h3>
+              <p class="catalog__item-price">12599 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
             </div>
           </a>
-        </li>
-        <li class="catalog-item">
+        </div>
+        <div class="catalog__item">
           <a href="#">
-            <div class="catalog-item-top">
-              <img class="catalog-item__img" src="./img/goods/hanna.png" alt="Кресло Ханна">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/hanna.png" alt="Кресло Ханна">
             </div>
-            <div class="catalog-item-bottom">
-              <h2 class="catalog-item__title">Кресло Ханна</h2>
-              <p class="catalog-item__price">9399 &#8381;</p>
-              <button class="btn-default catalog-item__btn" type="button">В корзину</button>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Кресло Ханна</h3>
+              <p class="catalog__item-price">9399 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
             </div>
           </a>
-        </li>
-      </ul>
+        </div>
+        <div class="catalog__item">
+          <a href="#">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/ricardo.png" alt="Стул Рекардо">
+            </div>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Стул Рекардо</h3>
+              <p class="catalog__item-price">9399 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+            </div>
+          </a>
+        </div>
+        <div class="catalog__item">
+          <a href="#">
+            <div class="catalog__item-top">
+              <img class="catalog__item-img" src="./img/goods/versal.png" alt="Стул Версаль">
+            </div>
+            <div class="catalog__item-bottom">
+              <h3 class="catalog__item-title">Стул Версаль</h3>
+              <p class="catalog__item-price">9399 &#8381;</p>
+              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-
+    <div class="container">
+      <div class="pagination">
+        <button class="pagination__start" type="button">Назад</button>
+        <button class="pagination__back" type="button">Назад</button>
+        <ul class="pagination__list">
+          <li class="pagination__item"><a href="#">1</a></li>
+          <li class="pagination__item"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="#">3</a></li>
+          <li class="pagination__item pagination__item--current"><a>4</a></li>
+          <li class="pagination__item"><a href="#">5</a></li>
+          <li class="pagination__item"><a href="#">6</a></li>
+          <li class="pagination__item"><a href="#">7</a></li>
+          <li class="pagination__item"><a href="#">8</a></li>
+        </ul>
+        <button class="pagination__next" type="button">Вперед</button>
+        <button class="pagination__end" type="button">Вперед</button>
+      </div>
+    </div>
   </section>
 </main>
 <footer class="footer">

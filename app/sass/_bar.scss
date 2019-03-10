@@ -1,0 +1,121 @@
+.bar {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    background-color: $background-white;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+
+  }
+  &__right {
+    display: flex;
+    margin-left: auto;
+    margin-right: 32px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 1.714;
+    color: $blue-main;
+    margin-left: 33px;
+    margin-right: 20px;
+    letter-spacing: 0.08em;
+    padding: 36px 0;
+  }
+  &__range {
+    position: relative;
+    margin-bottom: 12px;
+    &-item {
+      border: 2px solid $grey-medium;
+      box-sizing: border-box;
+      width: 88px;
+      padding: 4px 9px;
+      border-radius: 3px;
+      font-size: 14px;
+      line-height: 1.714;
+      color: $blue-main;
+    }
+    &-min {
+      margin-right: 31px;
+
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 98px;
+      width: 15px;
+      height: 2px;
+      background-color: $blue-main;
+    }
+
+  }
+  &__scale {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      left: 0;
+      width: 209px;
+      height: 3px;
+      background-color: $grey-medium;
+    }
+    &-line {
+      position: relative;
+      z-index: 1;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        left: 0;
+        width: 50%;
+        height: 3px;
+        background-color: $red-main;
+
+      }
+    }
+    &-item {
+      box-sizing: border-box;
+      width: 17px;
+      height: 17px;
+      border: 1px solid $grey-medium;
+      border-radius: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      background-color: $background-white;
+      z-index: 2;
+    }
+    &-min {
+      left: 0;
+    }
+    &-max {
+      left: 50%;
+    }
+  }
+  &__select {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $blue-main;
+  }
+}
+
+.По_наимено_анию {
+  font-size: 16px;
+  font-family: "PTRootUI";
+  color: rgb(20, 37, 88);
+  font-weight: bold;
+  line-height: 1.2;
+  position: absolute;
+  left: 836.937px;
+  top: 464.509px;
+  width: 134px;
+  height: 13px;
+  z-index: 231;
+}
