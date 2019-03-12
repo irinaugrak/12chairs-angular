@@ -16,6 +16,7 @@ $color-dark: #1f1d3d;
 $background-white: #FFFFFF;
 $background-light: #F5F8FA;
 $background-banner: #C9D6E0;
+$background-footer: #222328;
 
 // font-size
 $size-default: 16px;
@@ -94,12 +95,7 @@ body {
   display: flex;
   align-items: center;
 }
-.header-logo {
-  width: 170px;
-  margin-right: 31px;
-  display: flex;
-  align-items: flex-start;
-}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -110,44 +106,8 @@ body {
   color: $blue-medium;
   text-decoration: none;
 }
-.header-logo__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-left: 12px;
-  margin-top: 10px;
-}
-.header-logo__title {
-  position: relative;
-  font-size: $size-logo;
-  font-weight: 700;
-  letter-spacing: $letter13;
-  text-transform: uppercase;
-  color: $color-dark;
-}
-.header-logo__title:before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -2px;
-  width: 86px;
-  height: 2px;
-  background-color: $color-dark;
-}
-.header-logo__title:after {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: -2px;
-  width: 86px;
-  height: 2px;
-  background-color: $color-dark;
-}
-.header-logo__slogan {
-  margin-top: 6px;
-  font-size: $size-top;
-  color: $grey-main;
-  line-height: $line-medium;
-}
+
+
 .header-phone {
   padding-left: 23px;
   position: relative;

@@ -1,0 +1,60 @@
+.logo {
+  width: 170px;
+  margin-right: 31px;
+  display: flex;
+  align-items: flex-start;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-top: 10px;
+  }
+  &__title {
+    position: relative;
+    font-size: $size-logo;
+    font-weight: 700;
+    letter-spacing: $letter13;
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -2px;
+      width: 86px;
+      height: 2px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: -2px;
+      width: 86px;
+      height: 2px;
+    }
+    &--header {
+      color: $color-dark;
+      &:before {
+        background-color: $color-dark;
+      }
+      &:after {
+        background-color: $color-dark;
+      }
+    }
+    &--footer {
+      color: $background-white;
+      &:before {
+        background-color: $background-white;
+      }
+      &:after {
+        background-color: $background-white;
+      }
+    }
+  }
+  &__slogan {
+    margin-top: 6px;
+    font-size: $size-top;
+    line-height: $line-medium;
+    color: $grey-main;
+  }
+}
+
