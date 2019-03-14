@@ -9,281 +9,303 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-  <div class="header-top-wrapper">
-    <div class="container">
-      <div class="header-top">
-        <div class="logo">
-          <img src="./img/logo.png" alt="logo">
-          <div class="logo__wrapper">
-            <span class="logo__title logo__title--header">12 стульев</span>
-            <span class="logo__slogan logo__slogan--header">Утром деньги, <br> вечером стулья</span>
+<div class="wrapper">
+  <div class="content">
+    <header class="header">
+      <div class="header-top-wrapper">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo">
+              <img src="./img/logo.png" alt="logo">
+              <div class="logo__wrapper">
+                <span class="logo__title logo__title--header">12 стульев</span>
+                <span class="logo__slogan logo__slogan--header">Утром деньги, <br> вечером стулья</span>
+              </div>
+            </div>
+            <a class="header-phone" href="+74996539900">+7 (499) 653-9-900</a>
+            <div class="header-content">
+              <a class="header-status" href="#">Проверить статус заказа</a>
+              <div class="header-basket">
+                <a class="header-basket__title" href="#">Корзина</a>
+                <span class="header-basket__count">0</span>
+              </div>
+              <a class="header-in" href="#">Вход</a>
+            </div>
           </div>
-        </div>
-        <a class="header-phone" href="+74996539900">+7 (499) 653-9-900</a>
-        <div class="header-content">
-          <a class="header-status" href="#">Проверить статус заказа</a>
-          <div class="header-basket">
-            <a class="header-basket__title" href="#">Корзина</a>
-            <span class="header-basket__count">0</span>
-          </div>
-          <a class="header-in" href="#">Вход</a>
         </div>
       </div>
-    </div>
+      <div class="header-bottom-wrapper">
+        <div class="container">
+          <div class="header-bottom">
+            <nav class="header-navigation">
+              <ul class="header-navigation__list">
+                <li class="header-navigation__item header-navigation__item--current"><a href="#">Стулья и кресла</a></li>
+                <li class="header-navigation__item"><a href="#">Кровати и матрасы</a></li>
+                <li class="header-navigation__item"><a href="#">Шкафы и комоды</a></li>
+                <li class="header-navigation__item"><a href="#">Мебель для кухни</a></li>
+                <li class="header-navigation__item"><a href="#">Товары для дома</a></li>
+              </ul>
+            </nav>
+            <form class="header-search" action="#" method="get">
+              <input class="header-search__input" type="search" placeholder="Поиск по товарам"
+                     aria-label="Поиск по товарам">
+              <button class="header-search__btn" type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-name">
+        <div class="container">
+          <div class="section-name__wrapper">
+            <h1 class="section-name__title section-title">Стулья и кресла</h1>
+          </div>
+        </div>
+      </section>
+      <section class="bar">
+        <div class="container">
+          <div class="bar__wrapper">
+            <div class="bar__price">
+              <span class="bar__title">Цена</span>
+              <div class="bar__price-content">
+                <div class="bar__range">
+                  <input class="bar__range-item bar__range-min" type="text" value="5300">
+                  <input class="bar__range-item bar__range-max" type="text" value="12900">
+                </div>
+                <div class="bar__scale">
+                  <div class="bar__scale-line"></div>
+                  <div class="bar__scale-item bar__scale-min"></div>
+                  <div class="bar__scale-item bar__scale-max"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bar__right">
+              <div class="bar__sort">
+                <span class="bar__title">Сортировка</span>
+                <select class="bar__select" name="sort" id="sort">
+                  <option value="name">По наименованию</option>
+                  <option value="expensive">Дорогие сверху</option>
+                  <option value="cheap">Дешевые сверху</option>
+                </select>
+              </div>
+              <div class="bar__goods">
+                <span class="bar__title">Товаров на стринце</span>
+                <select class="bar__select" name="goods" id="goods">
+                  <option value=14>14</option>
+                  <option value=30>30</option>
+                  <option value=46>46</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__list">
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/chair-hanna.png" alt="Стул Ханна">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Стул Ханна</h3>
+                  <p class="catalog__item-price">9399 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button" disabled>В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/edinburg.png" alt="Стул Эдинбург">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Стул Эдинбург</h3>
+                  <p class="catalog__item-price">5690 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/solier.png" alt="Стул Сольер">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Стул Сольер</h3>
+                  <p class="catalog__item-price">2390 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/stella.png" alt="Стул Стелла">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Стул Стелла</h3>
+                  <p class="catalog__item-price">3500 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/blanes.png" alt="Стул Бланес">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Стул Бланес</h3>
+                  <p class="catalog__item-price">4300 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/goa.png" alt="Кресло Гоа">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Кресло Гоа</h3>
+                  <p class="catalog__item-price">8499 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item catalog__banner">
+              <div class="catalog__banner-wrapper">
+                <h2 class="catalog__banner-title">Товары для дома <br> со скидкой</h2>
+                <button class="btn-default catalog__banner-btn" type="button">Смотреть все</button>
+              </div>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/milton.png" alt="Кресло Мильтон">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Кресло Мильтон</h3>
+                  <p class="catalog__item-price">12599 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/hanna.png" alt="Кресло Ханна">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Кресло Ханна</h3>
+                  <p class="catalog__item-price">9399 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/ricardo.png" alt="Стул Рекардо">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Стул Рекардо</h3>
+                  <p class="catalog__item-price">9399 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__item">
+              <a href="#">
+                <div class="catalog__item-top">
+                  <img class="catalog__item-img" src="./img/goods/versal.png" alt="Стул Версаль">
+                </div>
+                <div class="catalog__item-bottom">
+                  <h3 class="catalog__item-title">Стул Версаль</h3>
+                  <p class="catalog__item-price">9399 &#8381;</p>
+                  <button class="btn-default catalog__item-btn" type="button">В корзину</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pagination">
+        <div class="container">
+          <div class="pagination-wrapper">
+            <button class="pagination__btn pagination__start" type="button"></button>
+            <button class="pagination__btn pagination__prev" type="button"></button>
+            <ul class="pagination__list">
+              <li class="pagination__item"><a href="#">1</a></li>
+              <li class="pagination__item"><a href="#">2</a></li>
+              <li class="pagination__item"><a href="#">3</a></li>
+              <li class="pagination__item pagination__item--current"><a>4</a></li>
+              <li class="pagination__item"><a href="#">5</a></li>
+              <li class="pagination__item"><a href="#">6</a></li>
+              <li class="pagination__item"><a href="#">7</a></li>
+              <li class="pagination__item"><a href="#">8</a></li>
+            </ul>
+            <button class="pagination__btn pagination__next" type="button"></button>
+            <button class="pagination__btn pagination__end" type="button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
-  <div class="header-bottom-wrapper">
-    <div class="container">
-      <div class="header-bottom">
-        <nav class="header-navigation">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item header-navigation__item--current"><a href="#">Стулья и кресла</a></li>
-            <li class="header-navigation__item"><a href="#">Кровати и матрасы</a></li>
-            <li class="header-navigation__item"><a href="#">Шкафы и комоды</a></li>
-            <li class="header-navigation__item"><a href="#">Мебель для кухни</a></li>
-            <li class="header-navigation__item"><a href="#">Товары для дома</a></li>
-          </ul>
-        </nav>
-        <form class="header-search" action="#" method="get">
-          <input class="header-search__input" type="search" placeholder="Поиск по товарам"
-                 aria-label="Поиск по товарам">
-          <button class="header-search__btn" type="submit"></button>
-        </form>
-      </div>
-    </div>
-  </div>
-</header>
-<main>
-  <section class="section-name">
-    <div class="container">
-      <div class="section-name__wrapper">
-        <h1 class="section-name__title section-title">Стулья и кресла</h1>
-      </div>
-    </div>
-  </section>
-  <section class="bar">
-    <div class="container">
-      <div class="bar__wrapper">
-        <div class="bar__price">
-          <span class="bar__title">Цена</span>
-          <div class="bar__price-content">
-            <div class="bar__range">
-              <input class="bar__range-item bar__range-min" type="text" value="5300">
-              <input class="bar__range-item bar__range-max" type="text" value="12900">
-            </div>
-            <div class="bar__scale">
-              <div class="bar__scale-line"></div>
-              <div class="bar__scale-item bar__scale-min"></div>
-              <div class="bar__scale-item bar__scale-max"></div>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="footer-top">
+          <div class="logo">
+            <img src="img/logo-white.png" alt="logo">
+            <div class="logo__wrapper">
+              <span class="logo__title logo__title--footer">12 стульев</span>
+              <span class="logo__slogan logo__slogan--footer">Утром деньги, <br> вечером стулья</span>
             </div>
           </div>
+          <nav class="footer-navigation">
+            <ul class="footer-navigation__list">
+              <li class="footer-navigation__item footer-navigation__item--current"><a href="#">Стулья и кресла</a></li>
+              <li class="footer-navigation__item"><a href="#">Кровати и матрасы</a></li>
+              <li class="footer-navigation__item"><a href="#">Шкафы и комоды</a></li>
+              <li class="footer-navigation__item"><a href="#">Мебель для кухни</a></li>
+              <li class="footer-navigation__item"><a href="#">Товары для дома</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="bar__right">
-          <div class="bar__sort">
-            <span class="bar__title">Сортировка</span>
-            <select class="bar__select" name="sort" id="sort">
-              <option value="name">По наименованию</option>
-              <option value="expensive">Дорогие сверху</option>
-              <option value="cheap">Дешевые сверху</option>
-            </select>
+        <div class="footer-bottom">
+          <p class="footer__copyright">&#169; Все права защищены, 2019</p>
+          <div class="footer__support">
+            <div class="footer__support-title">
+              <svg class="footer__support-img" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                <path fill-rule="evenodd" fill="#A1A8BD" d="M.722 0C.289 0 0 .289 0 .722A12.268 12.268 0 0 0 12.278 13c.433 0 .722-.289.722-.723V9.75c0-.434-.289-.723-.722-.723-.867 0-1.806-.144-2.6-.433-.289-.072-.506 0-.723.217L7.367 10.4C5.344 9.388 3.683 7.655 2.6 5.633l1.589-1.589c.216-.217.289-.506.216-.722a8.176 8.176 0 0 1-.433-2.6C3.972.289 3.683 0 3.25 0"/>
+              </svg>
+              <span class="footer__support-text">Техническая поддержка</span>
+            </div>
+            <a class="footer__phone" href="+74996539900">+7 (499) 653-9-900</a>
           </div>
-          <div class="bar__goods">
-            <span class="bar__title">Товаров на стринце</span>
-            <select class="bar__select" name="goods" id="goods">
-              <option value=14>14</option>
-              <option value=30>30</option>
-              <option value=46>46</option>
-            </select>
+          <div class="footer__status">
+            <a class="footer__status-text" href="#">Проверить статус заказа</a>
+            <svg class="footer__status-img" xmlns="http://www.w3.org/2000/svg" width="5" height="7">
+              <path fill-rule="evenodd" fill="#A1A8BD" d="M5.015 3.445L1.784.447 1.306.002.708.447l-.718.777 2.393 2.221L-.01 5.777l.718.667.598.555.478-.555 3.231-2.999z"/>
+            </svg>
           </div>
+          <div class="footer__in">
+            <svg class="footer__in-img" xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+              <path fill-rule="evenodd" fill="#A1A8BD" d="M0 12v-.75c0-2.625 2.475-4.5 6-4.5s6 1.875 6 4.5V12H0zm6-6C4.35 6 3 4.65 3 3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/>
+            </svg>
+            <a class="footer__in-text" href="#">Войти в систему</a>
+          </div>
+
         </div>
       </div>
     </div>
-  </section>
-  <section class="catalog">
-    <div class="container">
-      <div class="catalog__list">
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/chair-hanna.png" alt="Стул Ханна">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Стул Ханна</h3>
-              <p class="catalog__item-price">9399 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button" disabled>В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/edinburg.png" alt="Стул Эдинбург">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Стул Эдинбург</h3>
-              <p class="catalog__item-price">5690 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/solier.png" alt="Стул Сольер">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Стул Сольер</h3>
-              <p class="catalog__item-price">2390 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/stella.png" alt="Стул Стелла">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Стул Стелла</h3>
-              <p class="catalog__item-price">3500 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/blanes.png" alt="Стул Бланес">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Стул Бланес</h3>
-              <p class="catalog__item-price">4300 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/goa.png" alt="Кресло Гоа">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Кресло Гоа</h3>
-              <p class="catalog__item-price">8499 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item catalog__banner">
-          <div class="catalog__banner-wrapper">
-            <h2 class="catalog__banner-title">Товары для дома <br> со скидкой</h2>
-            <button class="btn-default catalog__banner-btn" type="button">Смотреть все</button>
-          </div>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/milton.png" alt="Кресло Мильтон">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Кресло Мильтон</h3>
-              <p class="catalog__item-price">12599 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/hanna.png" alt="Кресло Ханна">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Кресло Ханна</h3>
-              <p class="catalog__item-price">9399 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/ricardo.png" alt="Стул Рекардо">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Стул Рекардо</h3>
-              <p class="catalog__item-price">9399 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-        <div class="catalog__item">
-          <a href="#">
-            <div class="catalog__item-top">
-              <img class="catalog__item-img" src="./img/goods/versal.png" alt="Стул Версаль">
-            </div>
-            <div class="catalog__item-bottom">
-              <h3 class="catalog__item-title">Стул Версаль</h3>
-              <p class="catalog__item-price">9399 &#8381;</p>
-              <button class="btn-default catalog__item-btn" type="button">В корзину</button>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="pagination">
-    <div class="container">
-      <div class="pagination-wrapper">
-        <button class="pagination__btn pagination__start" type="button"></button>
-        <button class="pagination__btn pagination__prev" type="button"></button>
-        <ul class="pagination__list">
-          <li class="pagination__item"><a href="#">1</a></li>
-          <li class="pagination__item"><a href="#">2</a></li>
-          <li class="pagination__item"><a href="#">3</a></li>
-          <li class="pagination__item pagination__item--current"><a>4</a></li>
-          <li class="pagination__item"><a href="#">5</a></li>
-          <li class="pagination__item"><a href="#">6</a></li>
-          <li class="pagination__item"><a href="#">7</a></li>
-          <li class="pagination__item"><a href="#">8</a></li>
-        </ul>
-        <button class="pagination__btn pagination__next" type="button"></button>
-        <button class="pagination__btn pagination__end" type="button"></button>
-      </div>
-    </div>
-  </section>
-</main>
-<footer class="footer">
-  <div class="footer-wrapper">
-    <div class="container">
-      <div class="footer-top">
-        <div class="logo">
-          <img src="img/logo-white.png" alt="logo">
-          <div class="logo__wrapper">
-            <span class="logo__title logo__title--footer">12 стульев</span>
-            <span class="logo__slogan logo__slogan--footer">Утром деньги, <br> вечером стулья</span>
-          </div>
-        </div>
-        <nav class="footer-navigation">
-          <ul class="footer-navigation__list">
-            <li class="footer-navigation__item footer-navigation__item--current"><a href="#">Стулья и кресла</a></li>
-            <li class="footer-navigation__item"><a href="#">Кровати и матрасы</a></li>
-            <li class="footer-navigation__item"><a href="#">Шкафы и комоды</a></li>
-            <li class="footer-navigation__item"><a href="#">Мебель для кухни</a></li>
-            <li class="footer-navigation__item"><a href="#">Товары для дома</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer__copyright">Все права защищены, 2019</p>
-        <div class="footer__support">
-          <p>Техническая поддержка</p>
-          <p>+7 (499) 653-9-900</p>
-        </div>
-        <p>Проверить статус заказа</p>
-        <p>Войти в систему</p>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
+</div>
+
 </body>
 </html>

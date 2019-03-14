@@ -1,6 +1,132 @@
+// Прижать футер к низу
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: $grey-main;
+  line-height: 1.2;
+}
+
 .footer {
   &-wrapper {
     background-color: $background-footer;
     margin-top: 97px;
   }
+  &-top {
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  &-bottom {
+    margin-top: 26px;
+    padding-bottom: 38px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: -26px;
+      height: 1px;
+      background-color: rgb(255, 255, 255, 0.1);
+    }
+  }
+  &-navigation {
+    margin-left: 100px;
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    &__item {
+      cursor: pointer;
+      margin-right: 30px;
+      & a {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+        color: $background-white;
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        &:hover {
+          color: $red-main;
+        }
+      }
+    }
+  }
+  &__copyright {
+    margin: 0;
+    margin-right: 100px;
+    width: 200px;
+    @extend .footer-text;
+  }
+  &__support {
+    margin-right: 100px;
+    width: 200px;
+    &-text {
+      margin: 0;
+      @extend .footer-text;
+    }
+  }
+  &__phone {
+    margin-left: 18px;
+    @extend .footer-text;
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    width: 200px;
+    cursor: pointer;
+    &-text {
+      text-decoration: none;
+      margin-right: 8px;
+      @extend .footer-text;
+    }
+    &-img{
+      padding: 6px;
+      border: 2px solid $grey-main;
+      border-radius: 50%;
+    }
+    &:hover &-img path {
+      fill: $red-main;
+    }
+    &:hover &-text {
+      color: $red-main;
+    }
+  }
+  &__in {
+    width: 200px;
+    cursor: pointer;
+    &-text {
+      text-decoration: none;
+      @extend .footer-text;
+    }
+    &:hover &-img path {
+      fill: $red-main;
+    }
+    &:hover &-text {
+      color: $red-main;
+    }
+  }
 }
+

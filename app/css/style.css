@@ -288,7 +288,7 @@ body {
 
 .logo {
   width: 170px;
-  margin-right: 31px;
+  margin-right: 30px;
   display: flex;
   align-items: flex-start;
 }
@@ -711,9 +711,131 @@ body {
   font-weight: 700;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.footer-text, .footer__in-text, .footer__status-text, .footer__phone, .footer__support-text, .footer__copyright {
+  font-size: 14px;
+  color: #A1A8BD;
+  line-height: 1.2;
+}
+
 .footer-wrapper {
   background-color: #222328;
   margin-top: 97px;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.footer-bottom {
+  margin-top: 26px;
+  padding-bottom: 38px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.footer-bottom:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: -26px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-navigation {
+  margin-left: 100px;
+}
+.footer-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.footer-navigation__item {
+  cursor: pointer;
+  margin-right: 30px;
+}
+.footer-navigation__item a {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #FFFFFF;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+.footer-navigation__item a:hover {
+  color: #F54732;
+}
+.footer__copyright {
+  margin: 0;
+  margin-right: 100px;
+  width: 200px;
+}
+.footer__support {
+  margin-right: 100px;
+  width: 200px;
+}
+.footer__support-text {
+  margin: 0;
+}
+.footer__phone {
+  margin-left: 18px;
+}
+.footer__status {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  width: 200px;
+  cursor: pointer;
+}
+.footer__status-text {
+  text-decoration: none;
+  margin-right: 8px;
+}
+.footer__status-img {
+  padding: 6px;
+  border: 2px solid #A1A8BD;
+  border-radius: 50%;
+}
+.footer__status:hover .footer__status-img path {
+  fill: #F54732;
+}
+.footer__status:hover .footer__status-text {
+  color: #F54732;
+}
+.footer__in {
+  width: 200px;
+  cursor: pointer;
+}
+.footer__in-text {
+  text-decoration: none;
+}
+.footer__in:hover .footer__in-img path {
+  fill: #F54732;
+}
+.footer__in:hover .footer__in-text {
+  color: #F54732;
 }
 
 @media (max-width: 1024px) {

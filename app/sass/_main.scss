@@ -37,6 +37,7 @@ $letter-001: 0.001em;
 $letter1: 0.1em;
 $letter13: 0.13em;
 
+
 body {
   min-width: 320px;
   margin: 0;
@@ -48,6 +49,7 @@ body {
   color: $blue-main;
   background-color: $background-light;
 }
+
 .container {
   width: 1170px;
   box-sizing: border-box;
